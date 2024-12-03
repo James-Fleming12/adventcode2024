@@ -5,4 +5,8 @@ def filetoarr() -> list[str]:
     return temp
 
 words = filetoarr()
+curr: str = ""
 
+for word in words:
+    for i in range(len(word)-3):
+        if word[i:i+3] == "mul": pass
