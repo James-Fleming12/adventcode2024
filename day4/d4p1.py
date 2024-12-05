@@ -1,6 +1,3 @@
-from functools import lru_cache
-
-
 def filetoarr() -> list[str]:
     file = open(r"C:\Users\mflem\OneDrive\Desktop\other projects\adventcode\adventcode 2024\day4\file.txt", "r")
     temp = file.readlines()
@@ -37,7 +34,7 @@ res: int = 0
 
 for i1, word in enumerate(words):
     for i2, i in enumerate(word):
-        if i == " ": 
+        if i == " ":
             continue
         if i == "X":
             res += star(i1, i2)
