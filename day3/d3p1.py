@@ -9,4 +9,7 @@ curr: str = ""
 
 for word in words:
     for i in range(len(word)-3):
-        if word[i:i+3] == "mul": pass
+        if word[i:i+3] == "mul":
+            curr = ""
+            for j in range(i,len(word)):
+                pass
